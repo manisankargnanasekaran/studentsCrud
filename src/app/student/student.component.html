@@ -1,0 +1,33 @@
+
+
+
+
+
+
+  <table class="table">
+      <tr>
+        <th>Name
+        </th>
+        <th>Age
+        </th>
+        <th>place
+        </th>
+      </tr>
+      <tr *ngFor="let student of students">
+        <td>{{student.name}}
+        </td>
+        <td>{{student.age}}
+        </td>
+        <td>{{student.place}}
+        </td>
+
+        <td><button class="btn red btn-sm" (click)="doDeleteStudent(student.id)">Delete</button></td>
+        <td><button class="btn red btn-sm" (click)="doEditStudent(student.id)">Edit</button></td>
+           
+    
+
+      </tr>
+    </table>
+
+  <a routerLink="/new_student">new student</a>
+
